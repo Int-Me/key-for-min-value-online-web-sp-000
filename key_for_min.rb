@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     return nil
   else
-  name_hash.each { |key, value| final_key = key if value == name_hash.values.max }
+  name_hash.each { |key, value| final_key = key if value == name_hash.values.min }
   final_key
 end
 end
